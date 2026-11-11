@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cinderela ✨</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Cinzel', serif;
+background: radial-gradient(circle at top,#7aa6df,#4e74b8);
+color:#1b2a4a;
+text-align:center;
+}
+
+/* estrelas */
+
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(white 1px, transparent 1px);
+background-size:50px 50px;
+opacity:0.3;
+pointer-events:none;
+}
+
+/* título */
+
+h1{
+font-family:'Great Vibes', cursive;
+font-size:70px;
+margin-top:30px;
+color:#183a8a;
+}
+
+.sub{
+font-size:18px;
+margin-bottom:40px;
+}
+
+/* castelo */
+
+.castelo{
+width:150px;
+margin-top:20px;
+}
+
+/* seções */
+
+section{
+margin:60px 20px;
+}
+
+/* cards */
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+width:220px;
+border-radius:15px;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* imagens */
+
+.card img{
+width: 200px;
+height:200px;
+object-fit:contain;
+margin-bottom:10px;
+}
+
+/* botão */
+
+button{
+background:#f4c542;
+border:none;
+padding:14px 30px;
+border-radius:25px;
+font-weight:bold;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+button:hover{
+background:#ffda6a;
+transform:scale(1.1);
+box-shadow:0 0 15px gold;
+}
+
+.frase{
+font-size:22px;
+margin-top:30px;
+font-style:italic;
+}
+
+</style>
+</head>
+
+<body>
+
+<img class="castelo" src="https://static.wikia.nocookie.net/disneyprincesas/images/d/dc/Untitled-2.png/revision/latest?cb=20120403021552&path-prefix=pt-br">
+<h1>Cinderela ✨</h1>
+<p class="sub">Um clássico conto de magia, esperança e sonhos.</p>
+
+<!-- PERSONAGENS -->
+
+<section>
+
+<h2>Personagens</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="data:image/jpeg;base64,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">
+<h3>Cinderela</h3>
+<p>Uma jovem bondosa que acredita na magia e sonha com uma vida melhor.</p>
+</div>
+
+<div class="card">
+<img src="https://cinepop.com.br/wp-content/uploads/2024/10/Charming_Profile.webp">
+<h3>Príncipe</h3>
+<p>O príncipe do reino que se encanta com Cinderela no baile real.</p>
+</div>
+
+<div class="card">
+<img src="https://caras.com.br/wp-content/uploads/legacy/2019/09/09/cinderela-870523.jpg">
+<h3>Fada Madrinha</h3>
+<p>Uma fada gentil que usa magia para ajudar Cinderela.</p>
+</div>
+
+<div class="card">
+<img src="https://pbs.twimg.com/media/Ef5-AYQXgAEd6y2.jpg">
+<h3>Madrasta</h3>
+<p>A madrasta cruel que faz Cinderela trabalhar como criada.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ITENS MÁGICOS -->
+
+<section>
+
+<h2>Itens Mágicos</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://img.freepik.com/vetores-gratis/cinderela-sapato-de-vidro_23-2148460858.jpg">
+<h3>Sapatinho de Cristal</h3>
+<p>O sapatinho que ajudou o príncipe a encontrar Cinderela.</p>
+</div>
+
+<div class="card">
+<img src="https://recreio.com.br/wp-content/uploads/2024/06/cinderella.jpg">
+<h3>Carruagem</h3>
+<p>A abóbora transformada pela magia da fada madrinha.</p>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7G6g0W6RwUGcARNbb0X1h42zSpyTjq9Lng&s">
+<h3>Castelo</h3>
+<p>O lugar onde aconteceu o grande baile real.</p>
+</div>
+
+<div class="card">
+<img src="https://static.wikia.nocookie.net/disneyprincesas/images/2/29/Wand3.jpg/revision/latest?cb=20150820020758&path-prefix=pt-br">
+<h3>Varinha Mágica</h3>
+<p>Com ela a fada madrinha realiza sua magia.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- MAGIA -->
+
+<section>
+
+<h2>✨ Magia</h2>
+
+<p>Clique para fazer a magia da fada madrinha!</p>
+
+<button onclick="magia()">Bibbidi-Bobbidi-Boo</button>
+
+<p id="resultado"></p>
+
+</section>
+
+<section>
+
+<h2>Mensagem do Conto</h2>
+
+<p class="frase">"Tenha coragem e seja gentil."</p>
+
+</section>
+
+<script>
+
+function magia(){
+document.getElementById("resultado").innerHTML =
+"✨ A abóbora virou carruagem e os ratinhos viraram cavalos!";
+}
+
+</script>
+
+</body>
+</html>
